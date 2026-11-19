@@ -1,0 +1,523 @@
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+:root {
+    --navy: #092653;
+    --blue: #123d78;
+    --gold: #d6a72c;
+    --light: #f5f7fb;
+}
+
+
+/* HEADER */
+
+.header {
+    background: var(--navy);
+    color: white;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.logo h2 {
+    font-size: 22px;
+    color: white;
+}
+
+.logo p {
+    color: var(--gold);
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 550px;
+    background:
+        linear-gradient(120deg,
+        rgba(5, 25, 55, 0.96),
+        rgba(18, 61, 120, 0.85)),
+        url("image/logo.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.welcome {
+    color: var(--gold);
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    color: var(--gold);
+    font-size: 30px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin: 20px 0 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 75px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading span {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    color: var(--navy);
+    font-size: 32px;
+    margin-top: 8px;
+}
+
+.line {
+    width: 75px;
+    height: 4px;
+    background: var(--gold);
+    margin: 15px auto;
+    border-radius: 5px;
+}
+
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+    line-height: 2;
+    color: #555;
+}
+
+
+/* PRINCIPAL */
+
+.principal-section {
+    background: var(--light);
+    text-align: center;
+}
+
+.principal-card {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 8px 30px #00000012;
+    border-bottom: 5px solid var(--gold);
+}
+
+.principal-image {
+    width: 50%;
+}
+
+.principal-image img {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.principal-info {
+    width: 50%;
+    padding: 30px;
+}
+
+.small-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.principal-info h3 {
+    color: var(--navy);
+    font-size: 32px;
+}
+
+.principal-info h4 {
+    color: var(--gold);
+    font-size: 20px;
+}
+
+.principal-info p {
+    margin-top: 8px;
+    color: #555;
+}
+
+.principal-info .tagline {
+    color: var(--navy);
+    font-weight: bold;
+}
+
+.gold-line {
+    width: 80px;
+    height: 3px;
+    background: var(--gold);
+    margin: 20px auto;
+}
+
+
+/* COURSES */
+
+.courses {
+    text-align: center;
+    background: #ffffff;
+}
+
+.course-intro {
+    margin-bottom: 35px;
+    color: #666;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.course {
+    background: white;
+    padding: 30px 22px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 5px 22px #00000012;
+    border-bottom: 4px solid var(--gold);
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px #00000020;
+}
+
+.course-icon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.course h3 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.course p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.course span {
+    display: inline-block;
+    color: #9a7418;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* WHY CHOOSE US */
+
+.why-us {
+    background: var(--light);
+    text-align: center;
+}
+
+
+/* ADMISSION */
+
+.admission {
+    background: white;
+    text-align: center;
+}
+
+.admission > p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.admission form {
+    max-width: 480px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--gold);
+}
+
+button {
+    padding: 16px;
+    border: none;
+    border-radius: 7px;
+    background: var(--navy);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--gold);
+    color: var(--navy);
+}
+
+.form-note {
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 45px 20px 20px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+    margin-bottom: 12px;
+}
+
+footer h2 {
+    font-size: 28px;
+}
+
+.footer-tagline {
+    color: var(--gold);
+}
+
+.contact-details {
+    margin: 22px 0;
+    line-height: 2.2;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #20bd65;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background: #159b50;
+}
+
+.copyright {
+    border-top: 1px solid #ffffff30;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 22px;
+    right: 22px;
+    background: #20bd65;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px #0003;
+    z-index: 1000;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 430px;
+        padding: 50px 7%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .principal-card {
+        flex-direction: column;
+    }
+
+    .principal-image,
+    .principal-info {
+        width: 100%;
+    }
+
+    .principal-image img {
+        height: 350px;
+    }
+
+    .course {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
